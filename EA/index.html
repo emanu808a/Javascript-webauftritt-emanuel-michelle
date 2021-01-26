@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="refresh" content="20">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.png">
+    <title>Emanuel-Amacher</title>
+    <script src="basicjavascript/script.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <h1>CREATE<br>SOMETHING<br>TODAY<br>EVEN IF IT<br>SUCKS.</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projekt">Projekt</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a class="json" href="json/json.html">JSON</a></li>
+          <li><a class="json" href="todo/todo.html">TODO</a></li>
+          <li><a class="json" href="objects-literal/objects.html">Objects Literals</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <article>
+        <button id="textchanger">Change Text to english</button>
+      </article>
+      <article id="about">
+        <h2>about</h2>
+        <p id="pabout"> Ich bin 17 Jahre alt und habe im Sommer 2019 mit dem ersten Lehrjahr
+            zum Mediamatiker begonnen. In meiner Freizeit bin ich aktiv unterwegs,
+            sei dies mit Freunden, auf der Skipiste im Winter oder in der Natur im
+            Sommer. Oft ist meine Kamera und Drohne mit dabei<br><br><br><span>Ich bin motiviert
+            die Chancen der Digitalisierung zu nutzen, diese zu verstehen, um
+            zusammen mit Kunden und Kollegen innovative Kommunikationslösungen zu
+            entwickeln. Das Erstellen, Gestalten von visueller Kommunikation bereitet
+            mir grosse Freude.</span></p>
+      </article>
+
+      <article id="projekt">
+        <h2>pro<br>jekt</h2>
+          <section id="rprojekt">
+            <section id="wsk">
+              <h3 id="hprojekt1">Work Smart-Kundenschulungen</h3>
+              <p id="projekt1">Nach dem Onboarding durfte ich Kundenschulungen bei einer Bank in Basel
+                gestalten und ausführen. So erhielt ich die schon früh die Gelegenheit,
+                Verantwortung zu übernehmen und an der Kundenfront Erfahrungen zu
+                sammeln. Das hat mich motiviert und grosse Freude bereitet. Bis heute
+                habe ich  mehr als 150 Personen in Windows 10 und Office 2016 geschult
+                und befähigt.</p>
+              </section>
+              <section id="wss">
+                <h3 id="hprojekt2">Work Smart-Smartina Verantwortung</h3>
+                <p id="projekt2">Seit anfangs Oktober trage ich die Verantwortung für die Planung,
+                  Koordination und Controlling von dem “Smartina” IT Wissenssupport.
+                  Etwa 40 Lernende wechseln sich im Support ab. In dieser Mission erlerne
+                  ich auf praktische Art und Weise, wie ich Ressourcen plane, wie wichtig
+                  Transparenz ist und wie ich die Qualität sichere.</p>
+              </section>
+            </section>
+      </article>
+
+      <section id="feedback">
+        <h2>feed<br>back</h2>
+        <section id="rfeedback">
+          <h3>Nithu Naguleswaren</h3>
+          <p id="pfeedback">«Emanuel ist ein selbstbewusster junger Mann. Das Motto "Ich will!" spürt man
+            bei ihm immer und überall. Auch schätze ich seine ruhige und angenehme Art.»</p>
+        </section>
+      </section>
+
+      <section id="kontakt">
+        <section id="ckontakt">
+          <h3 id="big">«lass uns gemeinsam was<span>&nbsp;GROSSES&nbsp;</span>erstellen»</h3>
+            <section id="icon">
+              <a href="tel:0797044042"><img class="tel" src="icon/telicon.svg" alt="telephone.icon"></a>
+              <a href="mailto:emanuel.amacher@swisscom.com"><img class="mail" src="icon/mailicon.svg" alt="telephone.icon"></a>
+            </section>
+        </section>
+      </section>
+
+      <!--Forms-->
+
+      <div class="wrapper">
+        <h2>Contact us</h2>
+        <div id="error_message">
+
+        </div>
+        <form action="" id="myform" onsubmit = "return validate();">
+          <div class="input_field">
+            <input type="text" placeholder="Name" id="name">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Subject" id="subject">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone">
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input_field">
+            <textarea placeholder="Message" id="message"></textarea>
+          </div>
+          <div class="btn">
+            <input type="submit">
+          </div>
+        </form>
+      </div>
+
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+    <script>
+      document.getElementById("textchanger").onclick = function () {
+        document.getElementById("pabout").innerHTML = "\"I am 17 years old and have started in the summer of 2019 with the \" +\n" +
+                "            \"first year of my apprenticeship as a mediamatiker. In my free time I am active on the road, whether with \" +\n" +
+                "            \"friends, on the ski slopes in winter or in nature in summer. Often my camera and drone are with me\\n\" +\n" +
+                "            \"<br><br><br>I am motivated to use the opportunities of digitalization, to understand them, \" +\n" +
+                "            \"to develop innovative communication solutions together with customers and colleagues. Creating and \" +\n" +
+                "            \"designing visual communication gives me great pleasure.\\n\" +\n" +
+                "            \"\\n\" +\n" +
+                "            \"Translated with www.DeepL.com/Translator (free version)\";\n";
+        document.getElementById("hprojekt1").innerHTML = "Work Smart customer training";
+        document.getElementById("projekt1").innerHTML = "After onboarding, I was given the opportunity to design and conduct customer " +
+                "training sessions at a bank in Basel. This gave me the opportunity to take on responsibility early on and gain experience " +
+                "on the customer front. This motivated me and gave me great pleasure. To date, I have trained and empowered more than 150 people " +
+                "in Windows 10 and Office 2016.";
+        document.getElementById("hprojekt2").innerHTML = "Work Smart-Smartina Responsibility";
+        document.getElementById("projekt2").innerHTML = "Since the beginning of October, I have been responsible for the planning, coordination " +
+                "and controlling of the \"Smartina\" IT knowledge support. About 40 learners take turns in the support. In this mission I learn " +
+                "in a practical way how to plan resources, how important transparency is and how to ensure quality."
+        document.getElementById("pfeedback").innerHTML = "\"Emanuel is a self-confident young man. You can always sense the motto \"I want!\" with " +
+                "him everywhere. I also appreciate his calm and pleasant manner.\"";
+        document.getElementById("big").innerHTML = "«let's create something<span>&nbsp;BIG&nbsp;</span>together»";
+      }
+    </script>
+
+  </body>
+</html>
